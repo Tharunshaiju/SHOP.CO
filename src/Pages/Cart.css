@@ -1,0 +1,34 @@
+
+
+
+.quantity-btn {
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .quantity-btn:hover {
+    background-color: #f3f4f6; 
+    color: #111827; 
+  }
+  
+  
+  .empty-cart-img {
+    max-width: 12rem;
+    height: auto;
+  }
+  
+ 
+  .address-block {
+    font-size: 0.875rem;
+    color: #6b7280; 
+  }
+  
+  .address-block p:first-child {
+    margin-bottom: 0.25rem;
+  }
+  
+  .address-block button {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: inline-block;
+  }
+  
