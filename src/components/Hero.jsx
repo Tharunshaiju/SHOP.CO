@@ -17,11 +17,11 @@ const Hero = () => {
             Shop Now
           </button>
 
-          <div className="flex gap-12 mt-8">
+          <div className="hidden md:flex flex gap-12 mt-8">
             <div className="flex flex-col items-center">
               
               <span className="text-5xl font-bold">200+</span>
-              <span className="text-gray-600 text-sm">International Brands</span>
+              <span className="text-gray-600  text-sm">International Brands</span>
             </div>
             <div className="flex flex-col items-center">
               <span className="text-5xl font-bold">2,000+</span>
@@ -34,7 +34,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-screen h-screen">
+        <div className="hidden md:block w-screen h-screen">
              <img src={HeroImg} alt="Hero" className="object-cover w-full h-full" />
         </div>
       </div>
@@ -53,3 +53,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
