@@ -1,23 +1,23 @@
-**🛍️ Shop.co – E-commerce Web Application**
+# 🛍️ Shop.co – E-commerce Web Application
 
-Tech Stack: React JS, Tailwind CSS, Redux
-Responsive Design: ✅ Desktop & Mobile View
-Status: Completed
+**Live Demo**: [https://shopal.netlify.app/](https://shopal.netlify.app/)
 
-**Description:**
+## 🚀 Tech Stack
+- **Frontend**: React JS
+- **Styling**: Tailwind CSS
+- **State Management**: Redux
+- **Deployment**: Netlify
 
-Shop.co is a modern, fully responsive e-commerce web application built using React JS, Tailwind CSS, and Redux for state management. It features a clean, user-friendly interface optimized for both mobile and desktop devices. The application is designed to provide users with a seamless online shopping experience.
+## 📱 Responsive Design
+This application is fully responsive and optimized for both **desktop** and **mobile** views.
 
-**Key Features:**
+## 📝 Description
+Shop.co is a sleek and modern e-commerce web application that delivers a smooth and intuitive shopping experience. Built with React and styled using Tailwind CSS, the project also integrates Redux for efficient state management, especially for cart operations.
 
-🔍 Product listing with dynamic filtering and search
-
-🛒 Add to cart and cart management using Redux
-
-📱 Mobile-first responsive design
-
-🚚 Checkout flow (UI only)
-
-🎨 Sleek, modern UI styled with Tailwind CSS
-
-⚙️ Component-based architecture for easy scalability
+## 🔑 Key Features
+- 🔍 Browse products with filtering and search functionality
+- 🛒 Add-to-cart and cart management using Redux
+- 🧾 Dynamic cart updates with total pricing
+- 📱 Mobile-first responsive layout
+- 🎨 Clean and elegant user interface
+- 💻 Component-based architecture for scalability and maintainability
