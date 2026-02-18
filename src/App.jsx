@@ -15,7 +15,7 @@ import ProductDetails from "./Pages/ProductDetails";
 function App() {
   const [order, setOrder] = useState(null);
   return (
-    <div className="bg-gray-100">
+    <div className="bg-white">
       <BrowserRouter>
         <Header />
 

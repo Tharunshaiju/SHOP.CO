@@ -172,11 +172,15 @@ const Checkout = ({ setOrder }) => {
             {cart.products.map((product) => (
               <div key={product.id} className="product-item">
                 <div className="product-image-container">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="product-image"
-                  />
+                  {/* thumb-sm: locked 56×56px square, object-fit:cover */}
+                  <div className="thumb-sm">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
                   <div className="product-details">
                     <h4 className="product-name">{product.name}</h4>
                     <p className="product-quantity">₹{product.price} x {product.quantity}</p>

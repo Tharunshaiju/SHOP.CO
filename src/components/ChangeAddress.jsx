@@ -1,40 +1,52 @@
 import React, { useState } from 'react';
+import { MapPin } from 'lucide-react';
 
 const ChangeAddress = ({ setAddress, setIsModelOpen }) => {
   const [newAddress, setNewAddress] = useState('');
 
   return (
-    <div className="fixed inset-0  bg-opacity-50 flex items-center justify-center p-4 z-50">
-      <div className="bg-white rounded-lg shadow-xl w-full max-w-md p-6">
-        <h2 className="text-xl font-semibold text-gray-800 mb-4">Change Delivery Address</h2>
-        
-        <input
-          type="text"
-          placeholder="Enter your new address"
-          className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all"
-          onChange={(e) => setNewAddress(e.target.value)}
-          value={newAddress}
-          autoFocus
-        />
-        
-        <div className="flex justify-end space-x-3 mt-6">
-          <button
-            className="px-5 py-2 text-gray-700 font-medium rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors"
-            onClick={() => setIsModelOpen(false)}
-          >
-            Cancel
-          </button>
-          <button
-            className="px-5 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
-            onClick={() => {
+    <div className="p-8">
+      <div className="flex items-center gap-3 mb-6">
+        {/* <div className="w-10 h-10 rounded-full bg-black flex items-center justify-center flex-shrink-0">
+          <MapPin size={18} className="text-white" />
+        </div> */}
+        <div>
+          <h2 className="text-xl font-bold text-gray-900" style={{ letterSpacing: '-0.02em' }}>
+            Change Address
+          </h2>
+          <p className="text-sm text-gray-500">Update your delivery address</p>
+        </div>
+      </div>
+
+      <label className="form-label mb-1 block">New delivery address</label>
+      <input
+        type="text"
+        placeholder="Enter your full address..."
+        className="form-input mb-6"
+        value={newAddress}
+        onChange={(e) => setNewAddress(e.target.value)}
+        autoFocus
+      />
+
+      <div className="flex gap-3">
+        <button
+          className="flex-1 py-2.5 text-sm font-semibold text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200 transition-colors duration-200"
+          onClick={() => setIsModelOpen(false)}
+        >
+          Cancel
+        </button>
+        <button
+          className="flex-1 py-2.5 text-sm font-semibold text-white bg-black rounded-full transition-all duration-200 disabled:opacity-40 disabled:cursor-not-allowed hover:bg-gray-800"
+          onClick={() => {
+            if (newAddress.trim()) {
               setAddress(newAddress);
               setIsModelOpen(false);
-            }}
-            disabled={!newAddress.trim()}
-          >
-            Save Address
-          </button>
-        </div>
+            }
+          }}
+          disabled={!newAddress.trim()}
+        >
+          Save Address
+        </button>
       </div>
     </div>
   );
